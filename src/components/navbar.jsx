@@ -7,19 +7,15 @@ const Navbar = () => {
   const items = [
     {
       name: "Home",
-      href: "/",
     },
     {
       name: "About",
-      href: "/about",
     },
     {
       name: "My Work",
-      href: "/work",
     },
     {
       name: "Contact",
-      href: "/contact",
     },
   ];
 
@@ -68,10 +64,7 @@ const Navbar = () => {
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             {items.map((item, index) => (
               <li key={index}>
-                <Link
-                  to={item.href}
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >
+                <Link className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
                   {item.name}
                 </Link>
               </li>
