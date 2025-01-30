@@ -16,10 +16,10 @@ const contact = () => {
           <div className="py-4">
               <p className="text-lg font-semibold text-gray-800">Telegram:</p>
               <a
-                href="t.me/Daravuthwatna"
+                href="https://t.me/Daravuthwatna"
                 className="text-blue-600 hover:underline"
               >
-                t.me/Daravuthwatna
+                Daravuthwatna Phorn
               </a>
             </div>
             <div className="py-4">
