@@ -55,7 +55,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen
-              ? "block bg-white/30 backdrop-blur-md shadow-md md:bg-transparent"
+              ? "block bg-black/30 h-screen rounded-lg backdrop-blur-md shadow-md md:bg-transparent"
               : "hidden"
           } 
     w-full md:block md:w-auto`}
@@ -64,7 +64,7 @@ const Navbar = () => {
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             {items.map((item, index) => (
               <li key={index}>
-                <Link className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <Link className="block py-2 pr-4 pl-3 text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
                   {item.name}
                 </Link>
               </li>

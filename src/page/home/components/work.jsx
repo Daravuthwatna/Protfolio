@@ -1,32 +1,34 @@
 import React from "react";
 import ProjectA from "../../../assets/Project A.png";
 import ProjectB from "../../../assets/Project B.png";
+import ProjectC from "../../../assets/Project C.png";
+import ProjectD from "../../../assets/Project D.png";
 
 const Work = () => {
   const items = [
     {
       image: ProjectA,
-      title: "Project A",
+      title: "Computer Shop Ecommerce",
       description: "",
       link: "https://frontend-rho-pearl.vercel.app/",
     },
     {
       image: ProjectB,
-      title: "Project B",
+      title: "Cambodia Bon Om Touk",
       description: "",
       link: "https://om-turk-nk9z5w9gd-daravuthwatna.vercel.app/",
     },
     {
-      image: "",
-      title: "Project C",
+      image: ProjectC,
+      title: "Admintrator Dashboard",
       description: "",
       link: "",
     },
     {
-      image: "",
-      title: "Project D",
+      image: ProjectD,
+      title: "My Protfolio",
       description: "",
-      link: "",
+      link: "https://www.daravuthwatna.fyi/",
     },
   ];
 
@@ -45,7 +47,7 @@ const Work = () => {
               >
                 <div className="relative group">
                   <img
-                    src={item.image || "https://via.placeholder.com/300"}
+                    src={item.image}
                     alt={item.title}
                     className="w-full h-48 object-cover rounded-lg"
                   />
