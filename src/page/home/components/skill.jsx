@@ -12,7 +12,7 @@ const Skill = () => {
     },
     {
       name: "Frontend Development",
-      description: ["HTML", "CSS", "JavaScript", "React JS"],
+      description: ["HTML + CSS", "JavaScript", "React JS"],
     },
     {
       name: "Responsive Web Design",
@@ -32,15 +32,15 @@ const Skill = () => {
     },
     {
       name: "Database",
-      description: ["MySQL"],
+      description: ["MySQL", "Mongo DB"],
     },
   ];
 
   return (
-    <div className="bg-white flex items-center justify-center">
-      <div className="max-w-screen-xl w-full flex flex-col justify-center bg-gray-100 rounded-lg my-8 p-6 sm:p-10">
+    <div id="skill" className="bg-white flex items-center justify-center mx-3">
+      <div className="max-w-screen-xl w-full flex flex-col justify-center border-8 border-dashed border-gray-500 rounded-3xl bg-lime-300 my-8 p-6 sm:p-10">
         <div className="text-center sm:text-left">
-          <h2 className="mb-6 text-3xl font-extrabold tracking-tight sm:text-4xl">
+          <h2 className="mb-6 text-3xl text-gray-500 font-extrabold tracking-tight sm:text-4xl">
             My Skills
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -49,12 +49,19 @@ const Skill = () => {
                 key={index}
                 className="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center"
               >
-                <h3 className="text-lg font-semibold mb-2 text-blue-600">{item.name}</h3>
-                <ul className="text-gray-700">
+                <h3 className="text-xl font-semibold mb-3 text-lime-500">
+                  {item.name}
+                </h3>
+                <div className="flex flex-wrap justify-center items-center gap-2">
                   {item.description.map((desc, i) => (
-                    <li key={i} className="text-sm">{desc}</li>
+                    <p
+                      key={i}
+                      className="text-sm text-gray-500 bg-lime-300 px-4 py-1 rounded-2xl"
+                    >
+                      {desc}
+                    </p>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>

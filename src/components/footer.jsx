@@ -6,7 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6">
+    <footer className="bg-lime-400 text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Daravuthwatna Phorn. All rights

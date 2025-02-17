@@ -5,17 +5,18 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const items = [
-    { name: "Home" },
-    { name: "About", scroll: "0vh" },
-    { name: "My Work", scroll: "900vh" },
-    { name: "Contact", scroll: "2000vh" },
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Skill", id: "skill" },
+    { name: "Work", id: "work" },
+    { name: "Contact", id: "contact" },
   ];
 
-  const handleScroll = (vh) => {
-    window.scrollBy({
-      top: window.innerHeight + vh,
-      behavior: "smooth",
-    });
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
     setIsOpen(false);
   };
 
@@ -58,15 +59,23 @@ const Navbar = () => {
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             {items.map((item, index) => (
               <li key={index}>
-                <Link
-                  to="#"
-                  onClick={() => handleScroll(parseFloat(item.scroll))}
-                  className="block py-2 pr-4 pl-3 text-white md:hover:bg-transparent md:hover:text-blue-700"
+                <button
+                  onClick={() => handleScroll(item.id)}
+                  className="block py-2 pr-4 pl-3 text-white md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline"
                 >
                   {item.name}
-                </Link>
+                </button>
               </li>
             ))}
+            <li>
+              <a
+                href="/Phorn Daravuthwatna.pdf"
+                download="/Phorn Daravuthwatna.pdf"
+                className="md:bg-lime-500 block py-2 pr-4 pl-3 text-white md:border-2 border-dashed rounded-md hover:bg-lime-600"
+              >
+                Download CV
+              </a>
+            </li>
           </ul>
         </div>
       </div>
