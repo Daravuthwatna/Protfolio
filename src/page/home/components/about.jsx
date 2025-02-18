@@ -25,15 +25,16 @@ const About = () => {
             I am eager to contribute to innovative projects, grow as a
             developer, and collaborate in a dynamic team environment.
           </p>
+          <div className="mt-6">
+            <a
+              href="/Phorn Daravuthwatna.pdf"
+              download="Phorn Daravuthwatna.pdf"
+              className="inline-block px-6 py-3 text-gray-600 border-2 border-dashed border-gray-500 rounded-md bg-white hover:bg-gray-100 hover:text-gray-700 transition duration-300"
+            >
+              Download CV
+            </a>
+          </div>
         </div>
-
-        <a
-          href="/Phorn Daravuthwatna.pdf"
-          download="/Phorn Daravuthwatna.pdf"
-          className="bg-white block py-2 pr-4 pl-3 text-gray-500 border-2 border-dashed rounded-md hover:bg-white hover:text-gray-500 absolute bottom-8 right-8"
-        >
-          Download CV
-        </a>
       </div>
     </div>
   );

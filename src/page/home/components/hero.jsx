@@ -39,7 +39,7 @@ const Hero = () => {
           </p>
           <button
             onClick={handleScrollDown}
-            className="bg-white text-blue-500 font-semibold py-2 px-6 rounded-full hover:bg-lime-500 hover:text-white transition duration-300 ease-in-out"
+            className="bg-white border-2 border-dashed border-gray-500 text-blue-500 font-semibold py-2 px-6 rounded-full hover:bg-lime-500 hover:text-white transition duration-300 ease-in-out"
           >
             Read more
           </button>
